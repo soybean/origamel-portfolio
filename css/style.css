@@ -559,12 +559,15 @@ a {
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 999;
   }
 
   .nav__links.open {
+    visibility: visible;
     opacity: 1;
     pointer-events: auto;
   }
