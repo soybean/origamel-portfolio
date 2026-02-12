@@ -39,23 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     sections.forEach(section => sectionObserver.observe(section));
   }
 
-  // --- Stripe Checkout ---
-  const stripe = typeof Stripe !== 'undefined'
-    ? Stripe('pk_live_51SzpLULPUK3xvgJIXN0QFOtY0ejl3WeWMCHKNjcrOclWA5qNWiZvcRKDsa4gDf4rDRCjOPqBLTcKzt1sNd5ewMMT007OgMGZUi')
-    : null;
-
-  document.querySelectorAll('.shop__buy').forEach(btn => {
-    btn.addEventListener('click', () => {
-      if (!stripe) return;
-      const priceId = btn.dataset.price;
-      stripe.redirectToCheckout({
-        lineItems: [{ price: priceId, quantity: 1 }],
-        mode: 'payment',
-        successUrl: window.location.origin + '/?success=true',
-        cancelUrl: window.location.origin + '/#shop',
-      });
-    });
-  });
 
   // --- Lightbox ---
   const lightbox = document.getElementById('lightbox');
