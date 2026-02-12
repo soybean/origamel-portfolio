@@ -381,6 +381,12 @@ a {
   object-fit: cover;
 }
 
+.shop__card img.contain {
+  object-fit: contain;
+  aspect-ratio: auto;
+  background: var(--light);
+}
+
 .shop__info {
   display: flex;
   justify-content: space-between;
@@ -408,6 +414,27 @@ a {
   line-height: 1.7;
   color: var(--gray);
   margin-top: 0.5rem;
+}
+
+.shop__buy {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--black);
+  border: 1px solid var(--black);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.shop__buy:hover {
+  background: transparent;
+  color: var(--black);
 }
 
 /* --- Contact --- */
