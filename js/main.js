@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
           navAnchors.forEach(a => {
             a.classList.toggle('active', a.getAttribute('href') === '#' + id);
           });
+          history.replaceState(null, '', '#' + id);
         }
       });
     }, { rootMargin: '-40% 0px -55% 0px' });

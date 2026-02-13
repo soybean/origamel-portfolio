@@ -487,6 +487,72 @@ a {
   opacity: 0.6;
 }
 
+/* --- Open Source Models --- */
+.models__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.models__card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.models__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 1rem;
+}
+
+.models__name {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.models__desc {
+  font-size: 0.8rem;
+  line-height: 1.7;
+  color: var(--gray);
+  margin-top: 0.5rem;
+}
+
+.models__link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+.models__link:hover {
+  opacity: 0.6;
+}
+
+.models__placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: var(--light);
+  border: 1px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.models__placeholder span {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
 /* --- Contact --- */
 .contact__links {
   display: flex;
