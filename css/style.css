@@ -544,6 +544,11 @@ a {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
+  .nav {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   .nav__toggle {
     display: block;
   }
@@ -552,23 +557,20 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--white);
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    visibility: hidden;
-    opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s, visibility 0.3s;
-    z-index: 999;
+    visibility: hidden;
+    z-index: 9999;
   }
 
   .nav__links.open {
     visibility: visible;
-    opacity: 1;
     pointer-events: auto;
   }
 
