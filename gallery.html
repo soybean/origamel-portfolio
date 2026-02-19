@@ -17,44 +17,51 @@
       <h1 class="page__title">Gallery</h1>
       <a class="page__back" href="index.html#work">&larr; Back</a>
     </div>
+    <div class="gallery-filters">
+      <button class="gallery-filter active" data-filter="all">All</button>
+      <button class="gallery-filter" data-filter="lamps">Lamps</button>
+      <button class="gallery-filter" data-filter="kusudama">Kusudama</button>
+      <button class="gallery-filter" data-filter="tessellations">Tessellations</button>
+      <button class="gallery-filter" data-filter="sculpture">Sculpture</button>
+    </div>
     <div class="gallery">
-      <figure class="gallery__item"><img src="images/disc-lamp-books.webp" alt="Disc lamp on books" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/desk-lamp-spiral-side.webp" alt="Arc desk lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/tripod-lamp-table.webp" alt="Tripod lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/hero.webp" alt="Hero" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/rainbow-sphere-cluster.webp" alt="Rainbow cluster sphere" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/oval-tessellation-lamp.webp" alt="Oval tessellation lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/rose-spiral-lamp-large.webp" alt="Large rose spiral lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/tall-column-lamp-plants.webp" alt="Column lamp with plants" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/dark-teal-kusudama.webp" alt="Dark teal kusudama" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/trio-lamps-dark.webp" alt="Three illuminated origami lamps" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/floor-lamp-couch.webp" alt="Origami floor lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/black-star-color-accent.webp" alt="Black star with color accent" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/rose-kusudama-lamp-wood.webp" alt="Rose kusudama lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/hex-frame-gradient.webp" alt="Hex frame wall art" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/kusudama-lamp-pattern-bg.webp" alt="Kusudama lamp with shadow patterns" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/gradient-tessellation-flat.webp" alt="Gradient tessellation" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/geometric-pendant-wall.webp" alt="Geometric wall pendant" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/pastel-rainbow-kusudama.webp" alt="Rainbow kusudama" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/black-star-flat.webp" alt="Black star flat view" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/stellated-lamp-hand.webp" alt="Stellated lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/detail-pinwheel-macro.webp" alt="Pinwheel pattern detail" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/cloud-pendant-lamp.webp" alt="Cloud pendant lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/lamp-trio-shelf.webp" alt="Lamp trio on shelf" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/wave-lamp-corner.webp" alt="Wave stand lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/pendant-light-hexagonal.webp" alt="Pendant light" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/flat-disc-lamp.webp" alt="Flat disc lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/trio-wall-sconces.webp" alt="Wall sconces" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/desk-lamp-spiral.webp" alt="Arc desk lamp front" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/black-kusudama-hand.webp" alt="Black kusudama" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/tall-tessellation-lamp.webp" alt="Tower lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/autumn-branch-gallery.webp" alt="Autumn branch installation" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/blue-kusudama-garland.webp" alt="Blue kusudama garland" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/rose-spiral-lamp-closeup.webp" alt="Rose spiral detail" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/2.webp" alt="Illuminated floral kusudama lamp" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/3.e479606a762d5cfd60af.webp" alt="Spiraling rose kusudama lamp from above" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/4.d1b5bce8941e9d3012dc.webp" alt="Hexagonal gradient tessellation wall piece" loading="lazy"></figure>
-      <figure class="gallery__item"><img src="images/7.8327deaf43805f6189ed.webp" alt="Rose kusudama lamp held in hand" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/disc-lamp-books.webp" alt="Disc lamp on books" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/desk-lamp-spiral-side.webp" alt="Arc desk lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/tripod-lamp-table.webp" alt="Tripod lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/hero.webp" alt="Hero" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="kusudama"><img src="images/rainbow-sphere-cluster.webp" alt="Rainbow cluster sphere" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="tessellations"><img src="images/oval-tessellation-lamp.webp" alt="Oval tessellation lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/rose-spiral-lamp-large.webp" alt="Large rose spiral lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/tall-column-lamp-plants.webp" alt="Column lamp with plants" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="kusudama"><img src="images/dark-teal-kusudama.webp" alt="Dark teal kusudama" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/trio-lamps-dark.webp" alt="Three illuminated origami lamps" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/floor-lamp-couch.webp" alt="Origami floor lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="sculpture"><img src="images/black-star-color-accent.webp" alt="Black star with color accent" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="kusudama"><img src="images/rose-kusudama-lamp-wood.webp" alt="Rose kusudama lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="tessellations"><img src="images/hex-frame-gradient.webp" alt="Hex frame wall art" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="kusudama"><img src="images/kusudama-lamp-pattern-bg.webp" alt="Kusudama lamp with shadow patterns" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="tessellations"><img src="images/gradient-tessellation-flat.webp" alt="Gradient tessellation" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/geometric-pendant-wall.webp" alt="Geometric wall pendant" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="kusudama"><img src="images/pastel-rainbow-kusudama.webp" alt="Rainbow kusudama" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="sculpture"><img src="images/black-star-flat.webp" alt="Black star flat view" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/stellated-lamp-hand.webp" alt="Stellated lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="sculpture"><img src="images/detail-pinwheel-macro.webp" alt="Pinwheel pattern detail" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/cloud-pendant-lamp.webp" alt="Cloud pendant lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/lamp-trio-shelf.webp" alt="Lamp trio on shelf" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/wave-lamp-corner.webp" alt="Wave stand lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/pendant-light-hexagonal.webp" alt="Pendant light" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/flat-disc-lamp.webp" alt="Flat disc lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/trio-wall-sconces.webp" alt="Wall sconces" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/desk-lamp-spiral.webp" alt="Arc desk lamp front" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="kusudama"><img src="images/black-kusudama-hand.webp" alt="Black kusudama" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="tessellations"><img src="images/tall-tessellation-lamp.webp" alt="Tower lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="sculpture"><img src="images/autumn-branch-gallery.webp" alt="Autumn branch installation" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="kusudama"><img src="images/blue-kusudama-garland.webp" alt="Blue kusudama garland" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="lamps"><img src="images/rose-spiral-lamp-closeup.webp" alt="Rose spiral detail" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="kusudama"><img src="images/2.webp" alt="Illuminated floral kusudama lamp" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="kusudama"><img src="images/3.e479606a762d5cfd60af.webp" alt="Spiraling rose kusudama lamp from above" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="tessellations"><img src="images/4.d1b5bce8941e9d3012dc.webp" alt="Hexagonal gradient tessellation wall piece" loading="lazy"></figure>
+      <figure class="gallery__item" data-category="kusudama"><img src="images/7.8327deaf43805f6189ed.webp" alt="Rose kusudama lamp held in hand" loading="lazy"></figure>
     </div>
   </main>
 
