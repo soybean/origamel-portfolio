@@ -104,6 +104,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Back to top ---
+  const backToTop = document.querySelector('.back-to-top');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('visible', window.scrollY > 600);
+    }, { passive: true });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   // --- Lightbox ---
   const lightbox = document.getElementById('lightbox');
   if (!lightbox) return;
