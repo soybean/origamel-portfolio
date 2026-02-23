@@ -652,31 +652,6 @@ a {
   color: var(--gray);
 }
 
-/* --- Patterns & Diagrams --- */
-.patterns__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 3rem;
-}
-
-.patterns__card {
-  background: var(--light);
-  padding: 1.5rem;
-}
-
-.patterns__card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-}
-
-.patterns__name {
-  display: block;
-  margin-top: 1rem;
-  font-size: 0.85rem;
-  font-weight: 400;
-}
-
 /* --- Contact --- */
 .contact__links {
   display: flex;
